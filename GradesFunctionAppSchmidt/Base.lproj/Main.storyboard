@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b3D-nM-UGc">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="760.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrP-YB-NNO">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="47.666666666666664"/>
@@ -31,12 +31,12 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Points Possible" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ea-9L-3G7">
-                                        <rect key="frame" x="0.0" y="85.666666666666657" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="85.666666666666657" width="393" height="38.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0He-v1-hra">
-                                        <rect key="frame" x="0.0" y="123.66666666666666" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="124" width="393" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit">
                                             <color key="baseBackgroundColor" red="0.23825089245390507" green="0.4585836178960126" blue="0.51586898702886597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -45,14 +45,20 @@
                                             <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzK-13-xDV"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1It-Kw-3mq">
+                                        <rect key="frame" x="0.0" y="162" width="393" height="66.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Eb-Nb-VXn">
-                                        <rect key="frame" x="0.0" y="161.66666666666666" width="393" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="228.33333333333331" width="393" height="76"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f3-GH-LDg">
-                                        <rect key="frame" x="0.0" y="182" width="393" height="577"/>
+                                        <rect key="frame" x="0.0" y="304.33333333333337" width="393" height="456.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -60,9 +66,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PrP-YB-NNO" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.0628019" id="77R-li-gji"/>
+                                    <constraint firstItem="6Eb-Nb-VXn" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.0267896" id="D24-Un-LbB"/>
+                                    <constraint firstItem="6f3-GH-LDg" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.6" id="FBp-MS-4Su"/>
                                     <constraint firstItem="FUB-VV-MMn" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.05" id="HVy-jU-TeE"/>
                                     <constraint firstItem="8ea-9L-3G7" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.05" id="PA8-V5-kQq"/>
-                                    <constraint firstItem="6Eb-Nb-VXn" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.0267896" id="Rby-M3-RHN"/>
+                                    <constraint firstItem="6Eb-Nb-VXn" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.1" id="Rby-M3-RHN"/>
                                     <constraint firstItem="0He-v1-hra" firstAttribute="height" secondItem="b3D-nM-UGc" secondAttribute="height" multiplier="0.05" id="yuW-XO-7OO"/>
                                 </constraints>
                             </stackView>
@@ -80,6 +88,7 @@
                         <outlet property="displayOutlet" destination="6Eb-Nb-VXn" id="qpi-x1-Zdq"/>
                         <outlet property="earnedOutlet" destination="FUB-VV-MMn" id="6IA-Ds-DWK"/>
                         <outlet property="possibleOutlet" destination="8ea-9L-3G7" id="83A-rV-cUF"/>
+                        <outlet property="tupleOutlet" destination="1It-Kw-3mq" id="mb4-lX-i7F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
